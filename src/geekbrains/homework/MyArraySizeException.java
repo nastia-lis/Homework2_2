@@ -1,14 +1,11 @@
 package geekbrains.homework;
 
 public class MyArraySizeException extends ArrayIndexOutOfBoundsException {
-    private int arrayLength;
 
-    public MyArraySizeException(int arrayLength) {
-        this.arrayLength = arrayLength;
+    public MyArraySizeException() {
     }
 
-    public MyArraySizeException(String s, int arrayLength) {
+    public MyArraySizeException(String s) {
         super(s);
-        this.arrayLength = arrayLength;
     }
 }
